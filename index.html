@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Rohan Portfolio Website</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />  
+        
+        <!-- Update these with your own fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300&family=Titillium+Web:wght@300&display=swap" rel="stylesheet"> 
+        
+        <link rel="stylesheet" href="css/style.css">
+
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <img src="img/devjane.png" alt="">
+            </div>
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="#services" class="nav__link">My Knowledge</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">About me</a></li>
+                    <li class="nav__item"><a href="#work" class="nav__link">My Activities</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <!-- Introduction -->
+        <section class="intro" id="home">
+            <h1 class="section__title section__title--intro">
+                Hello, I am <strong>Rohan Jagtap</strong>
+            </h1>
+            <p class="section__subtitle section__subtitle--intro">Software Developer</p>
+            <img src="img/rohan-smiling.png" alt="a picture of Jane Smith smiling" class="intro__img">
+        </section>
+        
+        
+        <!-- My services -->
+        <section class="my-services" id="services">
+            <h2 class="section__title section__title--services">What I Know</h2>
+            <div class="services">
+                <div class="service">
+                    <h3>Programming</h3>
+                    <p>Since the 9th grade, I have been learned  C++, Swift, Java, Javascript and am currently learning Octave and Python. Check out my Github account for my personal projects.</p>
+                </div> <!-- / service -->
+                
+                <div class="service">
+                    
+                        <h3>Frameworks and Libraries</h3>
+                        <p>When programming with Swift, I used the Cocoa Touch Framework to build apps, download addition files, and call APIs. I am currently learning Sci-Kit and PyTorch libraries for Machine Learning.  </p>
+                    
+                </div> <!-- / service -->
+                
+                <div class="service">
+                    <h3>Miscellaneous</h3>
+                    <p>In addition to all experience, I have written a manual and articles on Artificial Intelligence. Check out my re-published articles on The Startup and Data-Drive Investor on Medium.</p>
+                </div> <!-- / service -->
+            </div> <!-- / services -->
+            
+            <a href="#work" class="btn">My Activities</a>
+        </section>
+        
+        
+        <!-- About me -->
+        <section class="about-me" id="about">
+           <h2 class="section__title section__title--about">Who I am</h2>
+           <p class="section__subtitle section__subtitle--about">Software Enthusiast based out of Vancouver, Canada</p>
+           
+           <div class="about-me__body">
+               <p>I would describe myself as a passionate learner and believer in technology. Ever since watching the NASA rover land, I quickly grew an interest as I knew I wanted to program a rover when I became older.</p>
+               <p>I am using this website as a platform to prove that (1) I have learned crucial skills needed for a computer science students throughout the last five years and (2) a testament to my interest in software.</p>
+           </div>
+           
+           <img src="img/rohan-smiling.png" alt="Rohan smiling" class="about-me__img">
+        </section>
+        
+        <!-- My Work -->
+        <section class="my-work" id="work">
+            <h2 class="section__title section__title--work">My Activities</h2>
+            <p class="section__subtitle section__subtitle--work">See What I've Been Up To!</p>
+            
+            <div class="portfolio">
+                <!-- Portfolio item 01 -->
+                    <a href="Robotics.html" class="portfolio__item" >
+                        <h3 class="portfolio__subtitle">Robotics</h3>
+                    <!--<img src="img/rohan.jpg" alt="" class="portfolio__img">-->
+                        <div class="p_img">
+                            <img src="img/C++-Manual-Cover.png" alt="" class="portfolio__img">
+                        </div>
+                    </a>
+                <!-- Portfolio item 02 -->
+                <a href="SHAD.html" class="portfolio__item">
+                    <div class="p_img">
+                        <img src="img/SHADProj.png" alt="" class="portfolio__img">
+                    </div>
+
+                    <h3 class="portfolio__subtitle2">SHAD 2020</h3>
+                </a>
+                
+                <!-- Portfolio item 03 -->
+                <a href="Taekwondo.html" class="portfolio__item">
+                    <h3 class="portfolio__subtitle">Taekwondo</h3>
+                    <div class="p_img">
+                        <img src="img/TaekwondoAward.png" alt="" class="portfolio__img">
+                    </div>
+                </a>
+                
+                <!-- Portfolio item 04 -->
+                <a href="TKS.html" class="portfolio__item">
+                    <div class="p_img">
+                        <img src="img/tks-logo.png" alt="" class="portfolio__img">
+                    </div>
+                    <h3 class="portfolio__subtitle2">The Knowledge Society</h3>
+                </a>
+                
+                <!-- Portfolio item 05 -->
+                <a href="LookoutHouseAndHealth.html" class="portfolio__item">
+                    <h3 class="portfolio__subtitle">Community</h3>
+                    <div class="p_img">
+                        <img src="img/Lookout-Logo.png" alt="" class="portfolio__img">
+                    </div>
+                </a>
+                
+                <!-- Portfolio item 06 -->
+                <a href="PassionProjects.html" class="portfolio__item">
+                    <div class="p2_img">
+                        <img src="img/face-detection.png" alt="" class="portfolio__img">
+                    </div>
+                    <h3 class="portfolio__subtitle2">My Passion Projects</h3>
+                </a>
+                
+                
+            </div>
+        </section>
+        
+        
+        <!-- Footer -->
+        <footer class="footer">
+            <!-- replace with your own email address -->
+            <a href="mailto:rohjag18@gmail.com" class="footer__link">rohjag18@gmail.com</a>
+            <ul class="social-list">
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://www.linkedin.com/in/rohan-jagtap-1a07151b0/">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://medium.com/@rohjag18">
+                        <i class="fab fa-medium"></i>
+                    </a>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://github.com/rohan-jagtap04">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </li>
+            </ul>
+        </footer>
+        
+        
+        <script src="js/index.js"></script>
+        
+    </body>
+</html>

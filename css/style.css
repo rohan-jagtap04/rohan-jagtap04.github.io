@@ -586,7 +586,7 @@ header {
 .card {
     width: 370px;
     background-color:#FB4B4E;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 4px 8px 0.75 rgba(0,0,0,0.2);
     transition: 0.3s;
     border-radius: 10px; /* 5px rounded corners */
     padding-right: 20px;
@@ -595,9 +595,10 @@ header {
   }
 
 .card2 {
-    width: 50%;
+    width:100%;
+    max-width: 375px;
     background-color:#FB4B4E;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 4px 8px 0.75 rgba(0,0,0,0.2);
     transition: 0.3s;
     border-radius: 10px; /* 5px rounded corners */
     padding-right: 20px;
@@ -608,7 +609,7 @@ header {
 .card3 {
     width: 85%;
     background-color:#FB4B4E;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 4px 8px 0.75 rgba(0,0,0,0.2);
     transition: 0.3s;
     border-radius: 10px; /* 5px rounded corners */
     padding-right: 20px;

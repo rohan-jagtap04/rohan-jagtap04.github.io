@@ -10,3 +10,8 @@ navLinks.forEach(link => {
         document.body.classList.remove('nav-open');
     })
 })
+
+new ElderCarousel('.carousel-part',{ 
+    items: 3,
+    step:1
+});

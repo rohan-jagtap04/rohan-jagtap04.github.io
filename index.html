@@ -6,7 +6,8 @@
         <title>Rohan Portfolio Website</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />  
-        
+        <link rel="stylesheet" href="dist/style.css">
+        <script src="dist/index.min.js"></script>
         <!-- Update these with your own fonts -->
         <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300&family=Titillium+Web:wght@300&display=swap" rel="stylesheet"> 
         
@@ -81,21 +82,21 @@
         </section>
         
         <!-- My Work -->
-        <section class="my-work" id="work">
+        <!-- <section class="my-work" id="work">
             <h2 class="section__title section__title--work">My Activities</h2>
             <p class="section__subtitle section__subtitle--work">See What I've Been Up To!</p>
             
             <div class="portfolio">
-                <!-- Portfolio item 01 -->
+                
                     <a href="Robotics.html" class="portfolio__item" >
                         <h3 class="portfolio__subtitle">Robotics</h3>
-                    <!--<img src="img/rohan.jpg" alt="" class="portfolio__img">-->
+                    <img src="img/rohan.jpg" alt="" class="portfolio__img">
                         <div class="p_img">
                             <img src="img/C++-Manual-Cover.png" alt="" class="portfolio__img">
                         </div>
                     </a>
-                <!-- Portfolio item 02 -->
-                <a href="SHAD.html" class="portfolio__item">
+
+                    <a href="SHAD.html" class="portfolio__item">
                     <div class="p_img">
                         <img src="img/SHADProj.png" alt="" class="portfolio__img">
                     </div>
@@ -103,7 +104,6 @@
                     <h3 class="portfolio__subtitle2">SHAD 2020</h3>
                 </a>
                 
-                <!-- Portfolio item 03 -->
                 <a href="Taekwondo.html" class="portfolio__item">
                     <h3 class="portfolio__subtitle">Taekwondo</h3>
                     <div class="p_img">
@@ -111,7 +111,6 @@
                     </div>
                 </a>
                 
-                <!-- Portfolio item 04 -->
                 <a href="TKS.html" class="portfolio__item">
                     <div class="p_img">
                         <img src="img/tks-logo.png" alt="" class="portfolio__img">
@@ -119,7 +118,6 @@
                     <h3 class="portfolio__subtitle2">The Knowledge Society</h3>
                 </a>
                 
-                <!-- Portfolio item 05 -->
                 <a href="LookoutHouseAndHealth.html" class="portfolio__item">
                     <h3 class="portfolio__subtitle">Community</h3>
                     <div class="p_img">
@@ -127,7 +125,6 @@
                     </div>
                 </a>
                 
-                <!-- Portfolio item 06 -->
                 <a href="PassionProjects.html" class="portfolio__item">
                     <div class="p2_img">
                         <img src="img/face-detection.png" alt="" class="portfolio__img">
@@ -137,8 +134,61 @@
                 
                 
             </div>
+        </section> -->
+        <!-- Activities Carousel -->
+        <!--  <img src="img/C++-Manual-Cover.png" alt="" class="portfolio__img"> -->
+        <section class="my-work" id="work" style="background-color:#303030">
+           
+            <h2 class="section__title section__title--work">My Activities</h2>
+            <p class="section__subtitle section__subtitle--work">See What I've Been Up To!</p>
+
+           <div class="carousel-part" style="background-color:#303030" height="700px">
+            <a href="Robotics.html" class="portfolio__item">
+                <div style="overflow: hidden">
+                    <h3 class="portfolio__subtitle" style="color:white;border-color:#FB4B4E;background-color:#303030;overflow: hidden;">Robotics</h3>
+                    <img src="img/C++-Manual-Cover.png" alt="" style="max-height: 600px;overflow: hidden">
+                </div>
+            </a>
+            
+            <a href="SHAD.html" class="portfolio__item">
+                <div>
+                    <h3 class="portfolio__subtitle" style="color:white;border-color:#FB4B4E;background-color:#303030;">SHAD</h3>
+                    <img src="img/SHADProj.png" alt="" >
+                </div>
+            </a>
+            
+            <a href="Taekwondo.html" class="portfolio__item">
+                <div>
+                    <h3 class="portfolio__subtitle" style="color:white;border-color:#FB4B4E;background-color:#303030;">Taekwondo</h3>
+                    <img src="img/TaekwondoAward.png" alt="" >
+                </div>
+            </a>
+            
+            <a href="TKS.html" class="portfolio__item">
+                <div>
+                    <h3 class="portfolio__subtitle" style="color:white;border-color:#FB4B4E;background-color:#303030;">The Knowledge Society</h3>
+    
+                    <img src="img/tks-logo.png" alt="" >
+                </div>
+            </a>
+            
+            <a href="LookoutHouseAndHealth.html" class="portfolio__item">
+                <div>
+                    <h3 class="portfolio__subtitle" style="color:white;border-color:#FB4B4E;background-color:#303030;">Community</h3>
+    
+                    <img src="img/Lookout-Logo.png" alt="" >
+                </div>
+            </a>
+            
+            <a href="PassionProjects.html" class="portfolio__item">
+                <div>
+                    <h3 class="portfolio__subtitle" style="color:white;border-color:#FB4B4E;background-color:#303030;">Passion Projects</h3>
+    
+                    <img src="img/face-detection.png" alt="" >
+                </div>
+            </a>
+          </div>
         </section>
-        
         
         <!-- Footer -->
         <footer class="footer">
@@ -161,9 +211,6 @@
                 </li>
             </ul>
         </footer>
-        
-        
         <script src="js/index.js"></script>
-        
     </body>
 </html>

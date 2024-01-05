@@ -505,7 +505,7 @@ main {
   line-height: 1.6;
 }
 
-.about-text p { margin-bottom: 15px; }
+.about-text p { margin-bottom: 0px; }
 
 
 
@@ -782,6 +782,7 @@ main {
 }
 
 .timeline-list {
+  list-style-type:disc;
   font-size: var(--fs-6);
   margin-left: 45px;
 }
@@ -1810,17 +1811,24 @@ textarea.form-input::-webkit-resizer { display: none; }
     display: flex;
     justify-content: center;
     align-items: stretch;
-    gap: 25px;
+    gap: 20px;
   }
 
   .main-content {
-    min-width: 75%;
-    width: 75%;
+    min-width: 74%;
+    width: 74%;
     margin: 0;
   }
 
+  .br-new {
+    display: block; /* makes it have a width */
+    content: ""; /* clears default height */
+    margin-top: 5px; /* change this to whatever height you want it */
+  }
 
-
+  .bullet-list-margin {
+    margin-left: 10px;
+  }
   /**
    * SIDEBAR
    */
@@ -1857,11 +1865,13 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .contact-info :is(.contact-link) {
     white-space: nowrap;
-    overflow: hidden;
+    word-wrap: normal;
+    overflow: visible;
     text-overflow: ellipsis;
   }
 
   .contact-info :is(.contact-link, time, address) {
+    word-wrap: normal;
     --fs-7: 14px;
     font-weight: var(--fw-300);
   }

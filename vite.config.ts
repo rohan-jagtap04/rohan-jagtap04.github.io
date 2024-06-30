@@ -9,7 +9,6 @@ export default defineConfig({
 	preview: {
 		port: 8000,
 	},
-	base: "/vite-deploy-demo/",
 	resolve: {
 		alias: {
 			"~/": `${path.resolve(__dirname, "src")}/`,

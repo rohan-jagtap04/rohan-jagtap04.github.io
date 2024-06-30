@@ -5,13 +5,14 @@ import path from "path";
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [Unocss(), react()],
-  preview: {
-    port: 8000
-  },
-  resolve: {
-    alias: {
-      "~/": `${path.resolve(__dirname, "src")}/`
-    }
-  }
+	plugins: [Unocss(), react()],
+	preview: {
+		port: 8000,
+	},
+	base: "/vite-deploy-demo/",
+	resolve: {
+		alias: {
+			"~/": `${path.resolve(__dirname, "src")}/`,
+		},
+	},
 });

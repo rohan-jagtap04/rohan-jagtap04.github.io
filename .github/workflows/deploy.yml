@@ -13,9 +13,13 @@ jobs:
     steps:
       - name: Checkout repo
         uses: actions/checkout@v3
+        
       - name: Configure Git Safe Directory
         run: /usr/bin/git config --global --add safe.directory /home/runner/work/rohan-jagtap04.github.io
+        
       - name: Install dependencies
+        uses: bahmutov/npm-install@v1
+        
       - name: Setup Node
         uses: actions/setup-node@v3
 

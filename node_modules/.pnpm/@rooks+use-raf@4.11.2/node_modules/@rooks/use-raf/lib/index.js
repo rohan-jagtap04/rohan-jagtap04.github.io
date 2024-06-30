@@ -1,0 +1,48 @@
+(function (global, factory) {
+  typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory(require('react'), require('raf')) :
+  typeof define === 'function' && define.amd ? define(['react', 'raf'], factory) :
+  (global = typeof globalThis !== 'undefined' ? globalThis : global || self, global.useRaf = factory(global.React, global.raf));
+}(this, (function (react, raf) { 'use strict';
+
+  function _interopDefaultLegacy (e) { return e && typeof e === 'object' && 'default' in e ? e : { 'default': e }; }
+
+  var raf__default = /*#__PURE__*/_interopDefaultLegacy(raf);
+
+  /**
+   *
+   * useRaf
+   * Uses a polyfilled version of requestAnimationFrame
+   * @param {function} callback The callback function to be executed
+   * @param {boolean} [isActive=true] The value which while true, keeps the raf running infinitely
+   */
+  function useRaf(callback, isActive) {
+      const savedCallback = react.useRef();
+      // Remember the latest function.
+      react.useEffect(() => {
+          savedCallback.current = callback;
+      }, [callback]);
+      react.useEffect(() => {
+          let startTime, animationFrame;
+          function tick() {
+              const timeElapsed = Date.now() - startTime;
+              startTime = Date.now();
+              loop();
+              savedCallback.current && savedCallback.current(timeElapsed);
+          }
+          function loop() {
+              animationFrame = raf__default['default'](tick);
+          }
+          if (isActive) {
+              startTime = Date.now();
+              loop();
+              return () => {
+                  raf__default['default'].cancel(animationFrame);
+              };
+          }
+      }, [isActive]);
+  }
+
+  return useRaf;
+
+})));
+//# sourceMappingURL=index.js.map

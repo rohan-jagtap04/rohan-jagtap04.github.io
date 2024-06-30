@@ -1,0 +1,39 @@
+import { useRef, useEffect } from 'react';
+import raf from 'raf';
+
+/**
+ *
+ * useRaf
+ * Uses a polyfilled version of requestAnimationFrame
+ * @param {function} callback The callback function to be executed
+ * @param {boolean} [isActive=true] The value which while true, keeps the raf running infinitely
+ */
+function useRaf(callback, isActive) {
+    const savedCallback = useRef();
+    // Remember the latest function.
+    useEffect(() => {
+        savedCallback.current = callback;
+    }, [callback]);
+    useEffect(() => {
+        let startTime, animationFrame;
+        function tick() {
+            const timeElapsed = Date.now() - startTime;
+            startTime = Date.now();
+            loop();
+            savedCallback.current && savedCallback.current(timeElapsed);
+        }
+        function loop() {
+            animationFrame = raf(tick);
+        }
+        if (isActive) {
+            startTime = Date.now();
+            loop();
+            return () => {
+                raf.cancel(animationFrame);
+            };
+        }
+    }, [isActive]);
+}
+
+export default useRaf;
+//# sourceMappingURL=index.esm.js.map

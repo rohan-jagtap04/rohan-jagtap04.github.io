@@ -1,63 +1,51 @@
-# playground-macos
+## Developer Portfolio Landing Page Template
 
-My portfolio website simulating macOS's GUI: https://portfolio.zxh.io
+### Introduction
 
-Powered by [React](https://reactjs.org/) + [Zustand](https://zustand-demo.pmnd.rs/) + [UnoCSS](https://uno.antfu.me/) + [TypeScript](https://www.typescriptlang.org/) + [Vite](https://vitejs.dev/).
+Use this template if you need a quick developer / data science portfolio! Based on a Minimal Jekyll theme for GitHub Pages.
 
-![light mode](./public/screenshots/light.png)
-![dark mode](./public/screenshots/dark.png)
+<img src="images/demo.gif?raw=true"/>
 
+### Installation
 
-&nbsp;
+See full step by step tutorial [on Medium](https://medium.com/@evanca/set-up-your-portfolio-website-in-less-than-10-minutes-with-github-pages-d0efa8ff56fd).
+___
 
-## Usage
+You can use the editor on GitHub to maintain and preview the content for your website in Markdown files.
 
-Clone the repo and install dependencies:
+Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
-```bash
-pnpm install
+### Markdown
+
+Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+
+```markdown
+Syntax highlighted code block
+
+# Header 1
+## Header 2
+### Header 3
+
+- Bulleted
+- List
+
+1. Numbered
+2. List
+
+**Bold** and _Italic_ and `Code` text
+
+[Link](url) and ![Image](src)
 ```
 
-Start dev server (with hot reloading):
+For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
-```bash
-pnpm dev
-```
+### Roadmap
 
-Build for production with minification to the `dist` folder:
+See the [open issues](https://github.com/evanca/quick-portfolio/issues) for a list of proposed features (and known issues).
+___
 
-```bash
-pnpm build
-```
+### References
 
-
-&nbsp;
-
-## Changelog
-
-- **Update 2023.06.26**: Improve [FaceTime](https://support.apple.com/en-us/HT208176).
-
-- **Update 2023.06.25**: Add [Typora](https://typora.io/), built on top of [Milkdown](https://milkdown.dev/).
-
-- **Update 2021.12.05**: Simulated the device's actual battery state using [Battery API](https://developer.mozilla.org/en-US/docs/Web/API/Battery_Status_API), displaying 100% charge on [unsupported browsers](https://developer.mozilla.org/en-US/docs/Web/API/Battery_Status_API#browser_compatibility).
-
-- **Update 2021.12.05**: Refactored for cleaner code by utilizing functional components and hooks. Refer to [this branch](https://github.com/Renovamen/playground-macos/tree/class-component) for the previous version implemented with class components.
-
-
-&nbsp;
-
-## Credits
-
-- macOS
-  - [Monterey](https://www.apple.com/macos/monterey/)
-  - [Catalina](https://www.apple.com/bw/macos/catalina/)
-- [macOS Icon Gallery](https://www.macosicongallery.com/)
-- [sindresorhus/file-icon-cli](https://github.com/sindresorhus/file-icon-cli)
-- [vivek9patel.github.io](https://github.com/vivek9patel/vivek9patel.github.io)
-
-
-&nbsp;
-
-## License
-
-[MIT](MIT)
+[1] Jekyll theme "Minimal" for GitHub Pages: https://github.com/pages-themes/minimal (CC0 1.0 Universal License)
+<br>[2] Dummy photo via: https://pixabay.com/photos/man-male-adult-person-caucasian-1209494/ (Pixabay License)
+<br>[3] Dummy thumbnail image created by rawpixel.com: https://www.freepik.com/free-vector/set-elements-infographic_2807573.htm (Standard Freepik License)

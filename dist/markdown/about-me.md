@@ -1,7 +1,7 @@
 # About Me
 I'm Rohan Jagtap. I'm a 3rd year Software Engineering student at the University of Waterloo.
 
-With **4 co-ops** down and **over a year's worth of paid work experience** in Fullstack development and Machine Learning, I am pumped for my next opportunity.
+With **4 co-ops** down and **over a year's worth of paid work and research experience** in Fullstack development and Machine Learning, I am pumped for my next opportunity.
 
 Here are all my links:
 
